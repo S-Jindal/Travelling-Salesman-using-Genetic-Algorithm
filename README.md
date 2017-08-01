@@ -3,7 +3,7 @@
 Anyone who wants to contribute/imrove the quality of the solution or change anything, do it and upload the results as well so that we can get a clear idea of how the performance was affected.
 <br />
 <br />
-# Details of the Algorithm :
+### Details of the Algorithm :
 <br />
 _Phenotype and Genotype_
 <br />
