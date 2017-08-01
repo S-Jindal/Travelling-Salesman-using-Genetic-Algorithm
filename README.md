@@ -4,7 +4,7 @@ Anyone who wants to contribute/imrove the quality of the solution or change anyt
 <br />
 <br />
 
-### Details of the Algorithm :
+## Details of the Algorithm :
 <br />
 
 _Phenotype and Genotype_
@@ -20,23 +20,31 @@ Both of them are same in this algo and basically reperesented by a permuatation 
 It is neither a steady state GA nor generational GA. It generates some k number of offsprings in each generation where k is a random number in range [1, MAX_REPRODUCTIONS] where MAX_REPRODUCTIONS is set to some constant(refer to code GA.java)
 <br />
 <br />
+
 *Parent Generation*
+
 <br />
 Parent generation is done via Stochastic Universal Sampling which is very similar to Roulette wheel method. 
 <br />
 <br />
+
 *Crossover*
+
 <br />
 This code uses Davi's order crossover (OX1).
 <br />
 <br />
+
 *Mutation Operator*
+
 <br />
 The mutation operation is rather just a swap mutation which will interchange two random points. In case non valid species is generated, the solution is rejected and mutation is called again (but not more than a certain limit). 
 Elitism is employed as well and the most fit member is never mutated. For other members, probability of mutation is set in the code - pm.
 <br />
 <br />
+
 *Survivor Selection*
+
 <br />
 In this fitness based selection is employed, the children tend to replace the least fit individuals in the population. 
 <br />
